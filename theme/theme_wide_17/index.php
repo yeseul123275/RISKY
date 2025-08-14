@@ -61,21 +61,21 @@ http://ety.kr/board/qa
 	</ol>
 	<div class="carousel-inner" role="listbox">
 	  <!-- Slide One - Set the background image for this slide in the line below -->
-	  <div class="carousel-item active" style="background-image: url('/0813/img/RISCKY3.png')">
+	  <div class="carousel-item active" style="background-image: url('/0813/img/riscky_1.png')">
 		<div class="carousel-caption d-md-block">
 		  <h3 class="ks4">에티와이드테마</h3>
 		  <p class="ks4 f20">전체페이지를 와이드 형태로만 제작하였습니다.</p>
 		</div>
 	  </div>
 	  <!-- Slide Two - Set the background image for this slide in the line below -->
-	  <div class="carousel-item" style="background-image: url('/0813/img/RISCKY4.jpg')">
+	  <div class="carousel-item" style="background-image: url('/0813/img/riscky_2.png')">
 		<div class="carousel-caption d-md-block">
 		  <h3 class="ks4">반응형 비즈니스 테마</h3>
 		  <p class="ks4 f20">CMS 인 그누보드 5.4 와 연동되어 사용가능한 테마 입니다.</p>
 		</div>
 	  </div>
 	  <!-- Slide Three - Set the background image for this slide in the line below -->
-	  <div class="carousel-item" style="background-image: url('iamge/PLUCKY.jpg')">
+	  <div class="carousel-item" style="background-image: url('/0813/img/riscky_3.png')">
 		<div class="carousel-caption d-md-block">
 		  <h3 class="ks4">테마몰 오픈</h3>
 		  <p class="ks4 f20">테마몰을 오픈하였습니다.</p>

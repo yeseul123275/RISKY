@@ -1,55 +1,9 @@
 
-<!-------------------------- 네비게이션 -------------------------->
-<div class="container-fluid top-line fixed-header d-none">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div id="tnb_index_left">
-					<!-- social -->
-					<div class="sns_icon">
-					<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-					</div>
-					<div class="sns_icon">
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					</div>
-					<div class="sns_icon">
-					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-					</div>
-				</div>
-				<div id="tnb_index">
-					<ul>
-					<?php if($is_member) { ?>
-						<li><a href="<?php echo G5_BBS_URL; ?>/logout.php">로그아웃</a></li>
-						<li><a href="<?php echo G5_BBS_URL; ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
-					<?php }else{ ?>
-						<li><a href="<?php echo G5_BBS_URL; ?>/register.php"><i class="fa fa-user-plus" aria-hidden="true"></i> 회원가입</a></li>
-						<li><a href="<?php echo G5_BBS_URL; ?>/login.php"><i class="fas fa-sign-in-alt"></i> 로그인</a></li>
-					<?php }?>
-						<li><a href="<?php echo G5_BBS_URL; ?>/faq.php"><i class="fa fa-question" aria-hidden="true"></i> <span>FAQ</span></a></li>
-						<li><a href="<?php echo G5_BBS_URL; ?>/qalist.php"><i class="fa fa-comments" aria-hidden="true"></i> <span>1:1문의</span></a></li>
-						<li><a href="<?php echo G5_BBS_URL; ?>/current_connect.php" class="visit"><i class="fa fa-users" aria-hidden="true"></i> <span>접속자</span><strong class="visit-num">
-						1</strong></a></li>
-						<li><a href="<?php echo G5_BBS_URL; ?>/new.php"><i class="fa fa-history" aria-hidden="true"></i> <span>새글</span></a></li>
-						<?php if($is_admin) { ?>
-						<li><a href="<?php echo G5_URL?>/adm">관리자</a></li>
-						<?php } ?>
-					</ul>
-				</div>
-			</div><!-- /col -->
-		</div><!-- /row -->
-	</div><!-- /container -->
-</div>
-<style>
-.collapse.in{
-    -webkit-transition-delay: 4s;
-    transition-delay: 5s;
-    visibility: visible;
-}
-</style>
-<nav class="navbar fixed-top navbar-expand-lg navbar-white fixed-top">
+
+<nav class="navbar  navbar-expand-lg navbar-white  <?php if(defined('_INDEX_')) { ?> mainpage fixed-top <? } ?>">
   <div class="container">
 	<a class="navbar-brand" href="<?php echo G5_URL?>" class="logo">
-		<img src="/0813/img/RISKY_LOGO.png">
+		<img src="/0813/img/ys_logo.png" class="<?php if(defined('_INDEX_')) { ?> filteri <? } ?> img-fluid" alt="logo">
 	</a>
 	<button class="navbar-toggler navbar-dark navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
@@ -89,7 +43,7 @@ foreach ($menu_datas as $row) {
     if (!empty($row['sub']) && count($row['sub']) > 0) {
 ?>
         <li class="nav-item dropdown megamenu-li">
-            <a class="nav-link dropdown-toggle ks4 f16"
+            <a class="nav-link dropdown-toggle ks4 f16 "
                href="<?php echo $row['me_link']; ?>"
                id="navbarDropdownBlog"
                data-toggle="dropdown"

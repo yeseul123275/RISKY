@@ -2,13 +2,13 @@
 
 <nav class="navbar  navbar-expand-lg navbar-white  <?php if(defined('_INDEX_')) { ?> mainpage fixed-top <? } ?>">
   <div class="container">
-	<a class="navbar-brand" href="<?php echo G5_URL?>" class="logo">
+	<a class="navbar-brand  me-5 pe-5" href="<?php echo G5_URL?>" class="logo">
 		<img src="/0813/img/ys_logo.png" class="<?php if(defined('_INDEX_')) { ?> filteri <? } ?> img-fluid" alt="logo">
 	</a>
 	<button class="navbar-toggler navbar-dark navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInRight">
+	<div class="collapse navbar-collapse ms-5 ps-5" id="navbarResponsive" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInRight">
 	  <ul class="navbar-nav ml-auto">
 	  <?php
 $sql = " select *

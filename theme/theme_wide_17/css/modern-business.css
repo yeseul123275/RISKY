@@ -144,15 +144,7 @@ h3 {
   position: relative;  
 }
 .head-line span:before,
-.head-line span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  top: 0;
-  width: 100px;
-}
+/*
 .head-line span:before {
   right: 100%;
   margin-right: 15px;
@@ -757,7 +749,7 @@ footer
 .nav-link {
     display: block;
     padding: .5rem 1rem;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 /* 서브메뉴 가로 크기 */
